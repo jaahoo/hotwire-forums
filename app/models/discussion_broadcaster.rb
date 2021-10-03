@@ -28,7 +28,7 @@ class DiscussionBroadcaster
   end
 
   def move_categories
-    old_category_id, new_category_id = @discussion.saved_change_to_category_id
+    old_category_id, new_category_id = discussion.saved_change_to_category_id
 
     old_category = Category.find(old_category_id)
     new_category = Category.find(new_category_id)
